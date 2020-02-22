@@ -10,7 +10,6 @@ print(ascii_banner)
 
 interface = input("[+] Interface You Want To Change Its Mac > ")
 
-
 if interface:
 	ifconfig_output = subprocess.check_output(["ifconfig", interface])
 	current_mac = re.search("\w\w:\w\w:\w\w:\w\w:\w\w:\w\w",str(ifconfig_output))
