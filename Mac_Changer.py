@@ -3,7 +3,7 @@ import re
 
 subprocess.call(["clear"])
 
-f = open("banner","r")
+f = open("banner.txt","r")
 print(f.read())
 f.close()
 
