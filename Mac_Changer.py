@@ -1,12 +1,11 @@
-﻿import subprocess
+import subprocess
 import re
 
-subprocess.call(["pip3","install","pyfiglet"])
 subprocess.call(["clear"])
-import pyfiglet
 
-ascii_banner = pyfiglet.figlet_format("H3I53NB3RG")
-print(ascii_banner)
+f = open("banner","r")
+print(f.read())
+f.close()
 
 interface = input("[+] Interface You Want To Change Its Mac > ")
 
